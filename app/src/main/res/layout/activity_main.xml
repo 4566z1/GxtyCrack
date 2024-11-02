@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="416dp"
+        android:layout_height="377dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.amap.api.maps.MapView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="396dp"
+        android:text="添加轨迹"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="396dp"
+        android:text="获取定位"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="476dp"
+        android:text="设置完毕"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="556dp"
+        android:text="导入配置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="556dp"
+        android:text="清空当前"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="476dp"
+        android:text="加载配置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="16dp"
+        android:text="删除轨迹"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="190dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="632dp"
+        android:scrollbars="vertical"
+        android:text="调试信息"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="476dp"
+        android:ems="10"
+        android:hint="填写平均速度"
+        android:inputType="number|numberDecimal"
+        android:text="3.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="632dp"
+        android:ems="10"
+        android:hint="随机数最小值"
+        android:inputType="numberSigned|number"
+        android:text="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="632dp"
+        android:ems="10"
+        android:hint="随机数最大值"
+        android:inputType="numberSigned|number"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="684dp"
+        android:ems="10"
+        android:hint="插值间隔"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="556dp"
+        android:checked="true"
+        android:text="解除短距离上传限制"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="107dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="732dp"
+        android:checked="false"
+        android:text="坐标插值"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="788dp"
+        android:text="体育锻炼"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="788dp"
+        android:checked="true"
+        android:text="自由跑"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
